@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+            body{
+                background-color:rgb(200, 235, 209);
+                color:rgb(8, 79, 17);
+            }
+            #topic{
+                color:rgb(0, 89, 42);
+            }
+            .subtopics{
+                color:rgb(52, 158, 80);
+            }
+            .island{
+                color:rgb(0, 194, 78);
+            }
+            h3{
+                background-color:rgb(148, 232, 164);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1 id="topic">Travel to Langkawi</h1>
+        <ol>
+            <h2 class="subtopics"><em><li>Nature</em></h2>
+            <p><strong class="island">Langkawi </strong> is a tropical paradise known for its stunning natural beauty.<br> The island is famous for its pristine beaches, such as Cenang Beach and Tanjung Rhu, where soft white sands meet crystal-clear waters. <strong class="island">Langkawi</strong> is also home to lush rainforests, particularly within the <strong class="island">Langkawi</strong> UNESCO Global Geopark, which boasts unique rock formations and diverse ecosystems.<br> Visitors can explore hidden waterfalls and caves or take boat tours through the mangroves of the Kilim Karst Geoforest Park, where they may encounter eagles, monkeys, and monitor lizards. For those seeking island-hopping adventures, nearby gems like Beras Basah Island and Pulau Dayang Bunting (the Lake of the Pregnant Maiden) offer serene escapes with scenic views.</p>
+           
+            <h2 class="subtopics"><em><li>Sightseeing</em></h2>
+            <p><strong class="island">Langkawi</strong> offers several iconic attractions for sightseeing enthusiasts.<strong class="island">The Langkawi Sky Bridge</strong> is a must-visit, with its impressive curved design that spans above the rainforest, offering panoramic views of the island and the Andaman Sea. To reach the bridge, many visitors take <strong class="island">the Langkawi Cable Car</strong>, which ascends Gunung Mat Cincang, one of the highest peaks on the island.<br> Another notable landmark is Eagle Square (Dataran Lang), home to a massive eagle statue symbolizing <strong class="island">Langkawi’s</strong> heritage and freedom. For nature lovers, Telaga Tujuh Waterfalls, or the "Seven Wells Waterfall," is a fantastic spot to hike, swim, and enjoy the refreshing pools fed by cascading waters.</p>
+             <h3>Key Sightseeings:</h3>
+            <ul>
+                <li>Langkawi Sky Bridge</li><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Langkawi_sky_bridge.jpg/405px-Langkawi_sky_bridge.jpg" alt="Sightseeing" width="200">
+                <li>Langkawi Cable Car</li><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Awana_Skyway_Gondola_lift.jpg/375px-Awana_Skyway_Gondola_lift.jpg" alt="Sightseeing" width="200">
+                <li>Eagle Square (Dataran Lang)</li><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Langkawi_Malaysia_Dataran-Helang-05.jpg/450px-Langkawi_Malaysia_Dataran-Helang-05.jpg" alt="Sightseeing" width="130">
+                <li>Telaga Tujuh Waterfalls</li><br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Telaga_Sunyi_%28waterfall%29%2C_Purwokerto%2C_2015-03-23.jpg/614px-Telaga_Sunyi_%28waterfall%29%2C_Purwokerto%2C_2015-03-23.jpg" alt="Sightseeing" width="130">
+            </ul>
+            <h2 class="subtopics"><em><li>Food </em></h2>
+            <p><strong class="island">Langkawi’s</strong> culinary scene is as vibrant as its landscapes, with a mix of traditional Malay flavors and fresh seafood. One of the island's signature dishes is Laksa Kedah, a tangy fish broth served with rice noodles, herbs, and lime.<br> Nasi Dagang, another popular dish, features fragrant coconut milk-infused rice accompanied by a rich and spicy fish curry. Seafood lovers can indulge in freshly grilled prawns, squid, and fish at the night markets in Pantai Cenang.<br> For dessert, Langkawi's kuih-muih, a collection of sweet treats made from glutinous rice, coconut, and pandan, offers a delightful way to end any meal. The variety of flavors makes Langkawi a food lover’s haven.</p>
+        </ol>
+    </body>
+</html>
