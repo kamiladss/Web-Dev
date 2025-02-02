@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Facebook - Выполните вход или зарегестрируйтесь</title>
+    <link rel="icon" type="image/png" href="/images/icon-fc.png" >
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+        div{
+            display:block;
+        }
+       
+        
+        .main-block{
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            padding: 72px 0 72px;
+            margin:20px 80px 120px 80px;
+        }
+        img{
+            width:50%;
+            margin: 0px 0px -28px 0px;
+            border:0px;
+            padding:100px 0px 30px 0px;
+        }
+        .text p{
+    
+            font-size: 24px;
+            color: #000000;
+            margin: 0px 20px 50px 20px;
+            padding-right:100px;
+            font-size: 24px;
+    line-height: 28px;
+    width: auto;
+            
+
+        }
+        .text{
+            flex: 1;
+            max-width: 600px;
+            padding: 0px 0px 100px 90px;
+        }
+        .login-all{
+            text-align: center;
+            width: 396px; 
+            margin:50px 70px 0 0;
+            
+
+        }
+        .login-section{
+            
+            background-color: #fff;
+        
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 14px 28px 14px;
+            
+        }
+        .create-acc-text{
+            width: 360px;
+            text-align: center;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 20px 17px 10px 17px;;
+            
+            
+        }
+        .login-section input {
+            padding: 12px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+          }
+        .login-section button {
+            padding: 12px 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        .login-section button:hover {
+            background-color: #166fe5;
+          }
+          .support-footer {
+            padding:5px 40px;
+            line-height: 1.6;
+            background-color: #fff;
+            font-size: 12px;
+            color: #8a8d91;
+          }
+         
+.info-block{
+    margin:0px 250px 30px 220px;
+}
+          .support-footer a {
+            color: #8a8d91;
+            margin: 0 5px;
+            text-decoration: none;
+          }
+          .support-footer a:hover {
+            text-decoration: underline;
+          }
+    
+          #pass-forgotten {
+            text-align: center;
+            margin-top: 15px;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+          }
+          #pass-forgotten:hover {
+            text-decoration: underline;
+          }
+    </style>
+</head>
+<body>
+    <div class="main-block">
+        <div class="text">
+             <img src="/images/logo-facebook.png" width="-3em">
+             <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="login-all">
+       <div class="login-section">
+        <input type="text" class="input-text" id="email" placeholder="Электронный адрес или номер телефона" aria-label="Электронный адрес или номер телефона">
+       <input type="password" class="input-text" id="pass" placeholder="Пароль" aria-label="Пароль">
+       <button class="login" id="login-button" type="submit">Вход</button>
+       <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"  id="pass-forgotten">Забыли пароль?</a>
+       <div style="align-items: center; border-bottom: 1px solid #dadde1; display: flex; margin: 20px 16px; text-align: center;"></div>
+       <a role="button" href="https://www.facebook.com/r.php?entry_point=login" style="display: block; text-align: center; padding: 12px 10px; background-color: #42b72a; border-radius: 6px; color: #fff; font-size: 18px; font-weight: bold; text-decoration: none; margin: 10px 60px 5px 60px;"   type="submit">Создать новый акквунт</a>
+        </div>
+        <div class="create-acc-text">
+         <a href="https://www.facebook.com/r.php?entry_point=login" style="text-decoration: none; color:#000000; font-weight:bold;" id="create-acc">Создать страницу</a> знаменитости, музыкальной группы или компании.
+        </div>
+    </div>
+            
+    </div> 
+    
+    <div class="support-footer">
+        <div class="info-block">
+        <ul class="languages" style="padding-left:0px;padding-right:0px;">
+            <a href="">Русский</a>
+            <a href="">Қазақша</a>
+            <a href="">English (US)</a>
+            <a href="">Türkçe</a>
+            <a href="">Bahasa Indonesia</a>
+            <a href="">中文(简体)</a>
+            <a href="">Deutsch</a>
+            <a href="">한국어</a>
+            <a href="">Shqip</a>
+            <a href="">Español</a>
+            <a href="">Português (Brasil)</a>
+            <a href="" role="button" id="add=lang"> + </a>
+        </ul>
+    
+   
+    
+        <ul class="links-footage" style="border-top: 1px solid #dfe3e6; padding-top:13px;padding-left:0px;padding-right:0px;">
+            <a href="">Зарегистрироваться</a>
+            <a href="">Вход</a>
+            <a href="">Messenger</a>
+            <a href="">Facebook Lite</a>
+            <a href="">Видео</a>
+            <a href="">Места</a>
+            <a href="">Игры</a>
+            <a href="">Marketplace</a>
+            <a href="">Meta Pay</a>
+            <a href="">Магазин Meta</a>
+            <a href="">Meta Quest</a>
+            <a href="">Ray-Ban Meta</a>
+            <a href="">Meta AI</a>
+            <a href="">Instagram</a>
+            <a href="">Threads</a>
+            <a href="">Благотворительные акции</a>
+            <a href="">Услуги</a>
+            <a href="">Центр информации о выборах</a>
+            <a href="">Политика конфиденциальности</a>
+            <a href="">Центр конфиденциальности</a>
+            <a href="">Группы</a>
+            <a href="">Информация</a>
+            <a href="">Создать рекламу</a>
+            <a href="">Создать Страницу</a>
+            <a href="">Разработчикам</a>
+            <a href="">Вакансии</a>
+            <a href="">Файлы cookie</a>
+            <a href="">Рекламные предпочтения</a>
+            <a href="">Условия использования</a>
+            <a href="">Справка</a>
+            <a href="">Загрузка контактов и лица, не являющиеся пользователями</a>
+            <a href="">Настройки</a>
+            <a href="">Журнал действий</a>
+<br><p style="padding:6px 0 0 5px;">Meta © 2025</p>
+        </ul>
+        </div>
+        
+    </div>
+ 
+</body>
+</html>

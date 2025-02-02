@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft - AI, Cloud, Productivity, Computing, Gaming & Apps</title>
+    <link rel="icon" type="image/png" href="/images/logo-micr.png">
+
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .nav {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            background-color: #ffffff;
+            
+        }
+        
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding-right:100px;
+            
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 12px;
+            
+        }
+        .nav img{
+            width:30%;
+            padding-left:50px;
+            
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 0px;
+        }
+        .nav-right a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .nav-right img {
+            width: 40%;
+        
+            
+        }
+
+        .banner {
+            background-color: #0066CC; 
+            color: white; 
+            text-align: center;
+            padding: 20px 20px; 
+            font-family: Arial, sans-serif; 
+            font-size: 16px; 
+            font-weight:bolder;
+        }
+        .banner a {
+            color: white;
+            text-decoration: none;
+            
+        }
+        .banner a:hover {
+            text-decoration: underline;
+        }
+
+
+        .third-container{
+            background: url("/images/background.jpeg") no-repeat center center;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            
+            
+        }
+        .third-container h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .third-container p {
+            font-size: 16px;
+            margin: 10px 0 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content: center;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 2px;
+        }
+        .card .btn:hover {
+            background: #005bb5;
+        }
+
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 60px;
+            font-weight: bolder;
+        }
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .link-item img {
+            width: 40px; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .link-item a {
+            text-decoration: underline;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .nbanners-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 90px;
+            margin-bottom: 90px;
+
+        }
+        .nbanner {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 0px;
+            text-align: left;
+        }
+        .nbanner img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .nban-text{
+            padding: 24px ;
+
+        }
+        .nbanner h3 {
+            font-size: 24px;
+            margin: 15px 0 10px;
+        }
+        .nbanner p {
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 40px;
+            padding:0px 20px 0px 0px
+        }
+        .nbanner .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 0.125rem;
+            font-size: 14px;
+        }
+        .nbanner .btn:hover {
+            background: #005bb5;
+        }
+        
+        .xbox-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f3f3f3;
+            border-radius: 10px;
+            max-width: 1200px;
+            padding: 40px;
+            margin:0 auto;
+            margin-bottom: 90px;
+            
+            
+        }
+        .xbox-text {
+            max-width: 450px;
+            align-items: center;
+        }
+        .xbox-text h2 {
+            font-size: 29px;
+            margin: 0 0 10px;
+        }
+        .xbox-text p {
+            font-size: 16px;
+            color: #555;
+            margin: 0 0 20px;
+        }
+        .xbox-text .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .xbox-text .btn:hover {
+            background: #005bb5;
+        }
+        .xbox-image img {
+            width: 900px; 
+            max-width: 100%;
+        }
+        .business-cards {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .business-cards h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .business-card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .business-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .business-card-content {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .business-card-content h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .business-card-content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .business-card-content .btn {
+            display: block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            margin-top: auto;
+        }
+        .business-card-content .btn:hover {
+            background: #005bb5;
+        }
+        .explore-cards {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .explore-cards h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .explore-card {
+            background: white;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .explore-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .explore-card-content {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .explore-card-content h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .explore-card-content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .explore-card-content .btn {
+            display: block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            margin-top: auto;
+        }
+        .explore-card-content .btn:hover {
+            background: #005bb5;
+        }
+
+        
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <a  href="https://www.microsoft.com/ru-kz/" class="logo">
+             <img src="/images/icon-micr.png">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Surface</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Support</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a href="#">All Microsoft ▼</a>
+                <a href="#"><img src="/images/bucket-icon.png" alt="Bucket"></a>
+                <a href="#"><img src="/images/search-icon.png" alt="Search"></a>
+                <a href="#"><img src="/images/profile-icon.png" alt="User"></a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="banner">
+         <a href="#">Free 2-3 day shipping on every purchase, no catch.Learn more &rarr;</a>
+    </div>
+    <div class="third-container">
+        <h1>New Surface Copilot+ PCs for Business</h1>
+        <p>Introducing the first Surface Copilot+ PCs built with new Intel® Core™ Ultra processors (Series 2)—now available for pre-order.</p>
+        <div class="button-container">
+            <a href="#" class="button">Surface Pro for Business</a>
+            <a href="#" class="button">Surface Laptop for Business</a>
+        </div>
+        
+        <div class="photo-techs">
+            <img src="/images/techs.png" alt="techs">
+        </div>
+        
+        <div class="logo">
+            <img src="/images/copilot.png" alt="Copilot+PC Logo">
+            
+        
+        <img src="/images/core.png" alt="Intel Core Ultra Logo">
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="/images/card-1.png" alt="Surface Devices">
+            <h3>Compare all Surface for Business</h3>
+            <p>Best-in-class security, supercharged productivity, lightweight design—find the best Surface to fit your needs.</p>
+            <a href="#" class="btn">Compare devices</a>
+        </div>
+
+        <div class="card">
+            <img src="/images/card-2.png" alt="Keyboard Accessories">
+            <h3>Keyboards, mice, and more</h3>
+            <p>Shop accessories designed to turn your Surface devices into powerhouses of productivity.</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+
+        <div class="card">
+            <img src="/images/card-3.png" alt="Microsoft 365 Copilot">
+            <h3>Microsoft 365 Copilot</h3>
+            <p>Save time and focus on the things that matter most with AI in Microsoft 365 for business.</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </div>
+
+    </div>
+    <div class="links-container">
+        <div class="link-item">
+            <img src="/images/icon1.svg" alt="Surface Devices">
+            <a href="#">Shop Surface devices</a>
+        </div>
+        <div class="link-item">
+            <img src="/images/icon2.svg" alt="Xbox">
+            <a href="#">Shop Xbox games and consoles</a>
+        </div>
+        <div class="link-item">
+            <img src="/images/icon3.svg" alt="Accessories">
+            <a href="#">Shop for accessories</a>
+        </div>
+        <div class="link-item">
+            <img src="/images/icon4.svg" alt="Business">
+            <a href="#">Shop for your business</a>
+        </div>
+        <div class="link-item">
+            <img src="/images/icon5.svg" alt="Find PC">
+            <a href="#">Find your next PC</a>
+        </div>
+        <div class="link-item">
+            <img src="/images/icon6.svg" alt="Microsoft 365">
+            <a href="#">Choose your Microsoft 365</a>
+        </div>
+    </div>
+    <div class="nbanners-section">
+        <div class="nbanner">
+            <img src="/images/nban-1.avif" alt="Surface Pro">
+            <div class="nban-text">
+            <h3>Save up to $500 on select Surface Pro, Copilot+ PC</h3>
+            <p>Score savings on a fast, flexible 2-in-1 built for advanced AI experiences. For a limited time.</p>
+            <a href="#" class="btn">Shop now</a></div>
+        </div>
+
+        <div class="nbanner">
+            <img src="/images/nban2.avif" alt="Surface Laptop">
+            <div class="nban-text">
+            <h3>Save up to $500 on select Surface Laptop, Copilot+ PC</h3>
+            <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+            <a href="#" class="btn">Shop now</a></div>
+        </div>
+
+        <div class="nbanner">
+            <img src="/images/nban3.avif" alt="Microsoft 365">
+            <div class="nban-text">
+            <h3>Achieve the extraordinary</h3>
+            <p>Microsoft 365 delivers cloud storage, security, and Microsoft Copilot in your favorite apps—all in one plan.</p>
+            <a href="#" class="btn">Shop Microsoft 365</a></div>
+        </div>
+
+        <div class="nbanner">
+            <img src="/images/nban4.avif" alt="Copilot AI">
+            <div class="nban-text">
+            <h3>Copilot is your AI companion</h3>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+            <a href="#" class="btn">Download the Copilot app</a></div>
+        </div>
+    </div>
+    <div class="xbox-banner">
+        <div class="xbox-text">
+            <h2>Xbox controllers</h2>
+            <p>Elite, wireless, adaptive—find the controller that fits your style of play</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+        <div class="xbox-image">
+            <img src="/images/xboxs.avif" alt="Xbox Controllers">
+        </div>
+    </div>
+    <section class="business-cards">
+        <h2>For business</h2>
+        <div class="cards-container">
+            <div class="business-card">
+                <img src="/images/bus1.jpeg" alt="Windows 11 for Business">
+                <div class="business-card-content">
+                    <h3>Windows 11 for business</h3>
+                    <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <img src="/images/bus2.avif" alt="Visual Studio 2022">
+                <div class="business-card-content">
+                    <h3>Visual Studio 2022</h3>
+                    <p>Get the most comprehensive IDE for .NET and C++ developers on Windows for building web, cloud, desktop, mobile apps, services, and games.</p>
+                    <a href="#" class="btn">Download Visual Studio 2022</a>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <img src="/images/bus3.avif" alt="Microsoft Teams for Business">
+                <div class="business-card-content">
+                    <h3>Get Microsoft Teams for your business</h3>
+                    <p>Online meetings, chat, real-time collaboration, and shared cloud storage—all in one place.</p>
+                    <a href="#" class="btn">Find the right plan for your business</a>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <img src="/images/bus4.avif" alt="Join the Era of AI">
+                <div class="business-card-content">
+                    <h3>Join the era of AI</h3>
+                    <p>Create, communicate, and code with the latest Microsoft AI solutions.</p>
+                    <a href="#" class="btn">Explore AI solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-cards">
+        <h2>Explore more about AI and Copilot</h2>
+        <div class="cards-container">
+            <div class="explore-card">
+                <img src="/images/exp1.avif" alt="Tackling climate challenges with AI">
+                <div class="explore-card-content">
+                    <h3>Tackling climate challenges with AI</h3>
+                    <p>AI’s analytical power is helping to optimize complex systems like supply chains, electricity grids, and atmospheric sciences in ways that can help the planet.</p>
+                    <a href="#" class="btn">Find out more</a>
+                </div>
+            </div>
+
+            <div class="explore-card">
+                <img src="/images/exp2.avif" alt="How AI boosts inclusivity at work">
+                <div class="explore-card-content">
+                    <h3>How AI boosts inclusivity at work</h3>
+                    <p>A first-of-its-kind study of neurodivergent and disabled Copilot users shows the ways AI can aid workplace accessibility.</p>
+                    <a href="#" class="btn">Read the insights</a>
+                </div>
+            </div>
+
+            <div class="explore-card">
+                <img src="/images/exp3.avif" alt="Confronting global challenges with AI">
+                <div class="explore-card-content">
+                    <h3>Confronting global challenges with AI</h3>
+                    <p>The head of Microsoft’s AI for Good Lab shares how AI can help organizations further their humanitarian missions.</p>
+                    <a href="#" class="btn">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

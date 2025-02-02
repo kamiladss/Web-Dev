@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/png" href="/images/icon-inst.png">
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+    div{display:block;}
+    .container{
+        
+        display:flex;
+        margin:32px 105px 0 105px;
+        padding-bottom: 32px;
+    }
+    .right-section{
+        align-items: center;
+    }
+    .login-section{
+        width:355px;
+        border: 1px solid #cecece;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:10px 0 10px 0;
+    }
+    .login-section img{
+        width: 175px;
+        height: 51px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin:8px 40px 8px 40px;
+    }
+    .login-form input {
+        display: block;
+        width: 100%;
+        margin: 10px 10px 8px 0px;
+        padding: 10px 5px 10px 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    form.login-form {
+        align-items: center;
+    }
+  
+
+    .password-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding-right:10px ;
+    }
+    .password-container input {
+        border: none;
+        flex: 1;
+        outline: none;
+        margin: 10px 0px 10px 0px;
+        padding:5px;
+    }
+    .show-password {
+
+        cursor: pointer;
+        color: #535353;
+        font-weight: bold;
+        padding-right: 10px;
+        
+    }
+    .divider {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #888;
+        text-align: center;
+        margin-bottom:20px;
+        margin-top:30px;
+    }
+    .fb-login {
+        background-color: #ffffff;
+        color: #0095f6;
+        border: none;
+        padding: 10px ;
+        padding-left:60px;
+        width: 75%;
+        border-radius: 5px;
+        cursor: pointer;
+        display:flex;
+        text-align: center;
+        font-weight: bold;
+        justify-content: space-between;
+
+    }
+    .login-form button{
+        background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            padding-right: 10px;
+        }
+        
+    
+  
+    .signup-section{
+        border: 1px solid #cecece;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .forgot {
+        text-decoration: none;
+        margin: 50px 20px 50px 86px;
+      
+        color: #8a8d91;
+
+    }
+
+    .signup-section{
+    margin-top: 30px;
+        padding:10px 40px;
+        width:355px;
+        border: 1px solid #cecece;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:10px 0px 10px 0px;
+        font-size: 14px;
+    }
+
+    .download-app {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .download-app img {
+        width: 140px;
+        margin: 5px;
+    }
+
+    .support-footer {
+        display:flex;
+        padding:5px 40px;
+        line-height: 1.6;
+        background-color: #fff;
+        font-size: 12px;
+        color: #8a8d91;
+        margin-bottom: 52px;
+        align-content: stretch;
+        text-decoration: none;
+    }
+    .support-footer a {
+        color: #8a8d91;
+        margin: 0 5px;
+        text-decoration: none;
+      }
+      .additional{
+        cursor: pointer;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        border: none;
+        background: transparent;
+        text-align: center;
+        
+      }
+      .additional select{
+        border: none;
+        background: transparent;
+        font-size: 12px;
+        color: #888;
+        cursor: pointer;
+      }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/home-phones.png" alt="home-arc">
+        <div class="right-section">
+            <div class="login-section">
+                <img src="/images/image-logo.png" alt="Instagram" class="logo">
+                <form class="login-form">
+                    <input class="userdata"  type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                    
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Password">
+                        <span class="show-password" onclick="togglePassword()">Показать</span>
+                    </div>
+                    <button type="submit">Войти</button>
+                    <div class="divider">Или</div>
+                    <a class="fb-login">Войти через Facebook</a>
+                    <a href="" class="forgot">Забыли пароль?</a>
+                </form>
+            </div>
+            <div class="signup-section">
+                <p>У вас ещё нет аккаунта? <a href="" style="text-decoration: none;
+        font-weight:bolder; color: #0095f6;">Зарегистрироваться</a></p>
+            </div>
+            <div class="download-app">
+                <p>Установите приложение.</p>
+                <img src="/images/google-play.jpeg" style="border-radius:5px;"alt="Google Play">
+                <img src="/images/microsoft-sotre.jpg" alt="Microsoft Store">
+            </div>
+        </div>
+    </div>
+        <div class="support-footer">
+            <div class="info-block">
+            <ul class="languages" style="padding-left:0px;padding-right:0px;">
+                <a href="">Meta</a>
+                <a href="">Информация</a>
+                <a href="">Блог</a>
+                <a href="">Вакансии</a>
+                <a href="">Помощь</a>
+                <a href="">API</a>
+                <a href="">Конфиденциальность</a>
+                <a href="">Условия</a>
+                <a href="">Места</a>
+                <a href="">Instagram Lite</a>
+                <a href="">Загрузка контактов и лица, не являющиеся пользователями</a>
+                <a href="">Meta Verified</a>
+                
+            </ul>
+            <div class="additional">
+           <select arial-label="Язык отображения">
+                <option value="ru">Russian</option>
+                <option value="kz">Kazach</option>
+                <option value="eng">English</option>
+            </select>
+            <p>© 2025 Instagram from Meta</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
