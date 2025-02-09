@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function truncate(str, maxlength) {
+            return (str.length > maxlength) ?
+              str.slice(0, maxlength - 1) + '…' : str;
+          }
+        alert(truncate("What I'd like to tell on this topic is:", 20) );
+        alert(truncate("Hi everyone!", 20) );
+        //
+        function extractCurrencyValue(str) {
+            return +str.slice(1);
+          }
+        alert( extractCurrencyValue('$120') === 120 ); 
+    </script>
+</body>
+</html>
