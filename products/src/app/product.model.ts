@@ -4,4 +4,9 @@ export interface Product {
     description: string;
     rating: number;
     link: string;
+    likes:number;
 }
+export interface Category {
+    name: string;
+    products: Product[];
+  }

@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .categories button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .gallery img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
