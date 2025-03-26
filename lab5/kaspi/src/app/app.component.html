@@ -1,0 +1,18 @@
+<h1> Каталог </h1>
+
+<div class="container">
+  <div class="button-holder">
+    <button (click)="selectCategory(null)"> Все </button>
+    <button (click)="selectCategory(1)">Классическая литература</button>
+    <button (click)="selectCategory(2)">Художественная литература</button>
+    <button (click)="selectCategory(3)">Саморазвитие и философия</button>
+    <button (click)="selectCategory(4)">Комиксы и графическая литература</button>
+  </div>
+
+<div class="content">
+<app-product
+  *ngFor="let product of filteredProducts"
+  [product]="product"
+  (remove)="removeProduct($event)"
+  ></app-product>
+</div>
