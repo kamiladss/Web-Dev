@@ -1,0 +1,80 @@
+.main {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.main-companies {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.main-companies:hover {
+  transform: translateY(-4px);
+}
+
+.main-companies-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563eb;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.main-companies-name:hover {
+  text-decoration: underline;
+}
+
+.main-companies p {
+  font-size: 15px;
+  color: #374151;
+  margin: 4px 0;
+}
+
+.main-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.change-btn {
+  background-color: #abc5ee;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.change-btn:hover {
+  background-color: #2563eb;
+}
+
+.delete-btn {
+  background-color: #d1a2a2;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #f27979;
+}

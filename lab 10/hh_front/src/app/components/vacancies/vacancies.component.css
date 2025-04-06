@@ -1,0 +1,91 @@
+.main {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto 20px auto;
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #059669;
+}
+
+.main-companies {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.main-companies:hover {
+  transform: translateY(-4px);
+}
+
+.main-companies-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #252d42;
+  margin-bottom: 10px;
+}
+
+.main-companies p {
+  font-size: 15px;
+  color: #374151;
+  margin: 4px 0;
+}
+
+.main-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.change-btn {
+  background-color: #a4c1f0;
+  color: #151414;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.change-btn:hover {
+  background-color: #6f9af6;
+}
+
+.delete-btn {
+  background-color: #f28d8d;
+  color: #241c1c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ec5c5c;
+}

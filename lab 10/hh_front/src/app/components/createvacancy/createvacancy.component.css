@@ -1,0 +1,64 @@
+/* Общая стилизация формы */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Каждое поле */
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+label span {
+  display: block;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+/* Input и Textarea стили */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* Кнопка */
+button,
+input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #16a34a;
+}
